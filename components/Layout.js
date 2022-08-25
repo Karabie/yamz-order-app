@@ -18,12 +18,12 @@ export default function Layout(props) {
       .replace(/-+$/, '') // Trim - from end of text
   }
 
-  const newChannel = async () => {
+  /**const newChannel = async () => {
     const slug = prompt('Please enter your name')
     if (slug) {
       addChannel(slugify(slug), user.id)
     }
-  }
+  }**/
 
   return (
     <main className="main flex h-screen w-screen overflow-hidden">
@@ -33,14 +33,14 @@ export default function Layout(props) {
         style={{ maxWidth: '20%', minWidth: 150, maxHeight: '100vh' }}
       >
         <div className="p-2 ">
-          <div className="p-2">
+          /**<div className="p-2">
             <button
               className="bg-blue-900 hover:bg-blue-800 text-white py-2 px-4 rounded w-full transition duration-150"
               onClick={() => newChannel()}
             >
               New Channel
             </button>
-          </div>
+          </div> **/
           <hr className="m-2" />
           <div className="p-2 flex flex-col space-y-2">
             <h6 className="text-xs">{user?.email}</h6>
